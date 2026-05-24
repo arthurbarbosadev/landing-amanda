@@ -1,0 +1,14 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Dev temp
+*.log
+node_modules/
+_*.js
+_*.ps1
