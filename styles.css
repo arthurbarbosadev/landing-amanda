@@ -753,6 +753,35 @@ h4 { font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 6px
   margin: 0 auto;
 }
 
+/* Selo de segurança abaixo do CTA */
+.trust-seal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 14px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.trust-seal .ts-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.trust-seal .ts-item .ico {
+  width: 14px;
+  height: 14px;
+  color: var(--green-deep);
+}
+.trust-seal .brand-logo {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
 .offer-perks {
   display: grid;
   grid-template-columns: 1fr 1fr;
