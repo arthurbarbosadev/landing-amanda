@@ -1,242 +1,341 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Área de Membros — Sobrancelha Moderna</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="membros.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área de Membros — Sobrancelha Moderna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="membros.css">
 </head>
+
 <body>
 
-<!-- SVG sprite -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="1.2"/><path d="M10 8l6 4-6 4V8z"/></symbol>
-    <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2" fill="currentColor" fill-opacity="0.15"/><path d="M3 12h18M12 8v13"/><path d="M12 8c-1-3-3-5-5-4s-1 4 5 4zM12 8c1-3 3-5 5-4s1 4-5 4z"/></symbol>
-    <symbol id="i-cert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M9 13l-2 8 5-3 5 3-2-8"/></symbol>
-    <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></symbol>
-    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/><circle cx="17" cy="7" r="2.5"/><path d="M22 20c0-3-2-5-5-5"/></symbol>
-    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z"/><path d="M4 16a4 4 0 014-4h12"/></symbol>
-    <symbol id="i-money" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></symbol>
-    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></symbol>
-    <symbol id="i-mirror" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="6" ry="7"/><path d="M12 16v5M9 21h6"/></symbol>
-    <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
-  </defs>
-</svg>
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="12" r="11" fill="currentColor" fill-opacity="0.15" stroke="currentColor"
+          stroke-width="1.2" />
+        <path d="M10 8l6 4-6 4V8z" />
+      </symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect x="3" y="8" width="18" height="13" rx="2" fill="currentColor" fill-opacity="0.15" />
+        <path d="M3 12h18M12 8v13" />
+        <path d="M12 8c-1-3-3-5-5-4s-1 4 5 4zM12 8c1-3 3-5 5-4s1 4-5 4z" />
+      </symbol>
+      <symbol id="i-cert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="12" cy="9" r="5" />
+        <path d="M9 13l-2 8 5-3 5 3-2-8" />
+      </symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2z" />
+      </symbol>
+      <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="9" cy="8" r="3.5" />
+        <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+        <circle cx="17" cy="7" r="2.5" />
+        <path d="M22 20c0-3-2-5-5-5" />
+      </symbol>
+      <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z" />
+        <path d="M4 16a4 4 0 014-4h12" />
+      </symbol>
+      <symbol id="i-money" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect x="2" y="6" width="20" height="12" rx="2" />
+        <circle cx="12" cy="12" r="3" />
+      </symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 7h4l2-3h6l2 3h4v13H3z" />
+        <circle cx="12" cy="13" r="4" />
+      </symbol>
+      <symbol id="i-mirror" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="12" cy="9" rx="6" ry="7" />
+        <path d="M12 16v5M9 21h6" />
+      </symbol>
+      <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" />
+      </symbol>
+    </defs>
+  </svg>
 
-<!-- ========== HEADER ========== -->
-<header class="topbar">
-  <div class="tb-wrap">
-    <a href="#" class="logo">
-      <svg class="logo-mark" viewBox="0 0 32 32"><path d="M4 20 Q16 8, 28 20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="16" cy="14" r="1.5" fill="currentColor"/></svg>
-      <span>Sobrancelha <em>Moderna</em></span>
-    </a>
-    <div class="tb-user">
-      <span class="user-name">Olá, <strong>Aluna</strong></span>
-      <button class="user-avatar" aria-label="Conta">A</button>
-    </div>
-  </div>
-</header>
-
-<!-- ========== HERO WELCOME ========== -->
-<section class="welcome">
-  <div class="wrap">
-    <span class="welcome-tag">✨ Você está dentro</span>
-    <h1>Bem-vinda ao <em>Sobrancelha Moderna</em></h1>
-    <p>Comece pelo módulo 1 e siga no seu ritmo. Tudo aqui é seu, pra sempre 💗</p>
-    <div class="welcome-stats">
-      <div><strong>6</strong><span>Módulos</span></div>
-      <div><strong>5</strong><span>Bônus</span></div>
-      <div><strong>∞</strong><span>Acesso</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== MÓDULOS ========== -->
-<section class="lib-section">
-  <div class="wrap">
-    <header class="sec-head">
-      <span class="sec-eyebrow"><svg class="ico"><use href="#i-play"/></svg> CURSO PRINCIPAL</span>
-      <h2>Módulos do Curso</h2>
-    </header>
-
-    <div class="carousel-wrap">
-      <div class="cards-carousel" id="mod-carousel">
-        <a href="assets/pdfs/modulo-1-materiais.pdf" target="_blank" rel="noopener" class="card">
-          <div class="card-thumb">
-            <img src="https://i.ibb.co/gZJWv7Z1/72c1c0c8-afcb-475c-92d1-8b8c8b6db02f.png" alt="Materiais & Preparação">
-          </div>
-          <div class="card-meta"><h4>Materiais & Preparação</h4></div>
-        </a>
-
-        <a href="assets/pdfs/modulo-2-biosseguranca.pdf" target="_blank" rel="noopener" class="card">
-          <div class="card-thumb">
-            <img src="https://i.ibb.co/RGCMv8Yq/194395ab-75b5-4e54-ac82-873decfbf286.png" alt="Biossegurança">
-          </div>
-          <div class="card-meta"><h4>Biossegurança</h4></div>
-        </a>
-
-        <a href="assets/pdfs/modulo-3-mapeamento.pdf" target="_blank" rel="noopener" class="card">
-          <div class="card-thumb">
-            <img src="https://i.ibb.co/ZRkGB47F/442a2f74-7f10-4901-ab63-7577a8c7d90a.png" alt="Mapeamento Facial">
-          </div>
-          <div class="card-meta"><h4>Mapeamento Facial</h4></div>
-        </a>
-
-        <a href="assets/pdfs/modulo-4-henna.pdf" target="_blank" rel="noopener" class="card">
-          <div class="card-thumb">
-            <img src="https://i.ibb.co/60ffJw55/d87fc1f6-e4ef-48e3-b6e7-8b9c857ccf01.png" alt="Henna">
-          </div>
-          <div class="card-meta"><h4>Henna</h4></div>
-        </a>
-
-        <a href="assets/pdfs/modulo-5-design-avancado.pdf" target="_blank" rel="noopener" class="card">
-          <div class="card-thumb">
-            <img src="https://i.ibb.co/B1ffbBp/d894ad72-cecb-4be8-b81f-eef20a921e20.png" alt="Design Avançado">
-          </div>
-          <div class="card-meta"><h4>Design Avançado</h4></div>
-        </a>
-
-        <a href="assets/pdfs/modulo-6-epilacao.pdf" target="_blank" rel="noopener" class="card">
-          <div class="card-thumb">
-            <img src="https://i.ibb.co/1JwYjs83/47612438-3c45-42e6-8262-fffb42c7af54.png" alt="Epilação & Autosobrancelha">
-          </div>
-          <div class="card-meta"><h4>Epilação & Autosobrancelha</h4></div>
-        </a>
-      </div>
-      <div class="car-nav">
-        <button type="button" class="car-btn" onclick="scrollMod(-1)" aria-label="Anterior">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
-        <button type="button" class="car-btn" onclick="scrollMod(1)" aria-label="Próximo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-        </button>
+  <!-- ========== HEADER ========== -->
+  <header class="topbar">
+    <div class="tb-wrap">
+      <a href="#" class="logo">
+        <svg class="logo-mark" viewBox="0 0 32 32">
+          <path d="M4 20 Q16 8, 28 20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          <circle cx="16" cy="14" r="1.5" fill="currentColor" />
+        </svg>
+        <span>Sobrancelha <em>Moderna</em></span>
+      </a>
+      <div class="tb-user">
+        <span class="user-name">Olá, <strong>Aluna</strong></span>
+        <button class="user-avatar" aria-label="Conta">A</button>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- ========== BÔNUS ========== -->
-<section class="lib-section bonus-section">
-  <div class="wrap">
-    <header class="sec-head">
-      <span class="sec-eyebrow yellow"><svg class="ico"><use href="#i-gift"/></svg> SEUS BÔNUS EXCLUSIVOS</span>
-      <h2>Bônus Inclusos</h2>
-    </header>
-
-    <div class="cards-grid bonus-grid">
-      <a href="#" class="card bonus-card">
-        <div class="card-thumb gradient">
-          <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/><circle cx="17" cy="7" r="2.5"/><path d="M22 20c0-3-2-5-5-5"/></svg></span>
-          <div class="card-overlay">
-            <span class="card-eyebrow yellow">BÔNUS 01</span>
-            <span class="card-title">Grupo VIP de Alunas</span>
-            <span class="card-foot">COMUNIDADE EXCLUSIVA</span>
-          </div>
-        </div>
-        <div class="card-meta">
-          <h4>Grupo VIP de Alunas</h4>
-          <span>Acesso vitalício à comunidade</span>
-        </div>
-      </a>
-
-      <a href="#" class="card bonus-card">
-        <div class="card-thumb gradient">
-          <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z"/><path d="M4 16a4 4 0 014-4h12"/></svg></span>
-          <div class="card-overlay">
-            <span class="card-eyebrow yellow">BÔNUS 02</span>
-            <span class="card-title">Apostila +50 Modelos</span>
-            <span class="card-foot">PDF DOWNLOAD</span>
-          </div>
-        </div>
-        <div class="card-meta">
-          <h4>Apostila +50 Modelos</h4>
-          <span>PDF · 64 páginas</span>
-        </div>
-      </a>
-
-      <a href="#" class="card bonus-card">
-        <div class="card-thumb gradient">
-          <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></svg></span>
-          <div class="card-overlay">
-            <span class="card-eyebrow yellow">BÔNUS 03</span>
-            <span class="card-title">Ebook Precificação</span>
-            <span class="card-foot">EBOOK + AULAS</span>
-          </div>
-        </div>
-        <div class="card-meta">
-          <h4>Ebook Precificação</h4>
-          <span>PDF + 3 aulas extras</span>
-        </div>
-      </a>
-
-      <a href="#" class="card bonus-card">
-        <div class="card-thumb gradient">
-          <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></svg></span>
-          <div class="card-overlay">
-            <span class="card-eyebrow yellow">BÔNUS 04</span>
-            <span class="card-title">Aulas Bônus de Henna</span>
-            <span class="card-foot">5 AULAS EXTRAS</span>
-          </div>
-        </div>
-        <div class="card-meta">
-          <h4>Aulas Bônus de Henna</h4>
-          <span>5 aulas · 42 min</span>
-        </div>
-      </a>
-
-      <a href="#" class="card bonus-card">
-        <div class="card-thumb gradient">
-          <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg></span>
-          <div class="card-overlay">
-            <span class="card-eyebrow yellow">BÔNUS 05</span>
-            <span class="card-title">Posts para Instagram</span>
-            <span class="card-foot">PACK DE TEMPLATES</span>
-          </div>
-        </div>
-        <div class="card-meta">
-          <h4>Posts para Instagram</h4>
-          <span>+30 templates editáveis</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ========== CERTIFICADO ========== -->
-<section class="lib-section cert-section">
-  <div class="wrap">
-    <header class="sec-head">
-      <span class="sec-eyebrow"><svg class="ico"><use href="#i-cert"/></svg> EMITA SEU CERTIFICADO</span>
-      <h2>Concluiu o curso?</h2>
-    </header>
-    <div class="cert-card">
-      <div class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M9 13l-2 8 5-3 5 3-2-8"/></svg></div>
-      <div>
-        <h3>Certificado de Conclusão</h3>
-        <p>Após assistir todos os módulos, emita seu certificado para imprimir e usar profissionalmente.</p>
-        <a href="#" class="cert-btn">Emitir certificado →</a>
+  <!-- ========== HERO WELCOME ========== -->
+  <section class="welcome">
+    <div class="wrap">
+      <span class="welcome-tag">✨ Você está dentro</span>
+      <h1>Bem-vinda ao <em>Sobrancelha Moderna</em></h1>
+      <p>Comece pelo módulo 1 e siga no seu ritmo. Tudo aqui é seu, pra sempre 💗</p>
+      <div class="welcome-stats">
+        <div><strong>6</strong><span>Módulos</span></div>
+        <div><strong>5</strong><span>Bônus</span></div>
+        <div><strong>∞</strong><span>Acesso</span></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="m-footer">
-  <p>© 2026 Sobrancelha Moderna · Suporte: <a href="mailto:contato@sobrancelhamoderna.com">contato@sobrancelhamoderna.com</a></p>
-</footer>
+  <!-- ========== MÓDULOS ========== -->
+  <section class="lib-section">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-eyebrow"><svg class="ico">
+            <use href="#i-play" />
+          </svg> CURSO PRINCIPAL</span>
+        <h2>Módulos do Curso</h2>
+      </header>
 
-<script>
-function scrollMod(dir) {
-  const car = document.getElementById('mod-carousel');
-  if (!car) return;
-  const card = car.querySelector('.card');
-  const gap = parseInt(getComputedStyle(car).gap) || 18;
-  car.scrollBy({ left: dir * (card.offsetWidth + gap), behavior: 'smooth' });
-}
-</script>
+      <div class="carousel-wrap">
+        <div class="cards-carousel" id="mod-carousel">
+          <a href="https://drive.google.com/file/d/1rQTe_3F9MLEEWzRjEbrHh5S6F-jFaIZY/view?usp=drive_link" target="_blank" rel="noopener" class="card">
+            <div class="card-thumb">
+              <img src="https://i.ibb.co/gZJWv7Z1/72c1c0c8-afcb-475c-92d1-8b8c8b6db02f.png"
+                alt="Materiais & Preparação">
+            </div>
+            <div class="card-meta">
+              <h4>Materiais & Preparação</h4>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1QCq9-XBUmzGWGslOF24htqpkkZUclLFA/view?usp=drive_link" target="_blank" rel="noopener" class="card">
+            <div class="card-thumb">
+              <img src="https://i.ibb.co/RGCMv8Yq/194395ab-75b5-4e54-ac82-873decfbf286.png" alt="Biossegurança">
+            </div>
+            <div class="card-meta">
+              <h4>Biossegurança</h4>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1ZLtsEaXbRkrvVw0o1J3dTX_NKhcZNnwO/view?usp=drive_link" target="_blank" rel="noopener" class="card">
+            <div class="card-thumb">
+              <img src="https://i.ibb.co/ZRkGB47F/442a2f74-7f10-4901-ab63-7577a8c7d90a.png" alt="Mapeamento Facial">
+            </div>
+            <div class="card-meta">
+              <h4>Mapeamento Facial</h4>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1epgEWoi5J5WZYgBpjpK5DzGechGhDRJb/view?usp=drive_link" target="_blank" rel="noopener" class="card">
+            <div class="card-thumb">
+              <img src="https://i.ibb.co/60ffJw55/d87fc1f6-e4ef-48e3-b6e7-8b9c857ccf01.png" alt="Henna">
+            </div>
+            <div class="card-meta">
+              <h4>Henna</h4>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1l1Xbq2oqA1HdJ67S5UbL0FCo40yd1mRm/view?usp=drive_link" target="_blank" rel="noopener" class="card">
+            <div class="card-thumb">
+              <img src="https://i.ibb.co/B1ffbBp/d894ad72-cecb-4be8-b81f-eef20a921e20.png" alt="Design Avançado">
+            </div>
+            <div class="card-meta">
+              <h4>Design Avançado</h4>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1SLgGSpWIHo2g-P62ePfl_Owq-YVcmhfy/view?usp=drive_link" target="_blank" rel="noopener" class="card">
+            <div class="card-thumb">
+              <img src="https://i.ibb.co/1JwYjs83/47612438-3c45-42e6-8262-fffb42c7af54.png"
+                alt="Epilação & Autosobrancelha">
+            </div>
+            <div class="card-meta">
+              <h4>Epilação & Autosobrancelha</h4>
+            </div>
+          </a>
+        </div>
+        <div class="car-nav">
+          <button type="button" class="car-btn" onclick="scrollMod(-1)" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <button type="button" class="car-btn" onclick="scrollMod(1)" aria-label="Próximo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BÔNUS ========== -->
+  <section class="lib-section bonus-section">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-eyebrow yellow"><svg class="ico">
+            <use href="#i-gift" />
+          </svg> SEUS BÔNUS EXCLUSIVOS</span>
+        <h2>Bônus Inclusos</h2>
+      </header>
+
+      <div class="cards-grid bonus-grid">
+        <a href="#" class="card bonus-card">
+          <div class="card-thumb gradient">
+            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="8" r="3.5" />
+                <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+                <circle cx="17" cy="7" r="2.5" />
+                <path d="M22 20c0-3-2-5-5-5" />
+              </svg></span>
+            <div class="card-overlay">
+              <span class="card-eyebrow yellow">BÔNUS 01</span>
+              <span class="card-title">Grupo VIP de Alunas</span>
+              <span class="card-foot">COMUNIDADE EXCLUSIVA</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <h4>Grupo VIP de Alunas</h4>
+            <span>Acesso vitalício à comunidade</span>
+          </div>
+        </a>
+
+        <a href="#" class="card bonus-card">
+          <div class="card-thumb gradient">
+            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z" />
+                <path d="M4 16a4 4 0 014-4h12" />
+              </svg></span>
+            <div class="card-overlay">
+              <span class="card-eyebrow yellow">BÔNUS 02</span>
+              <span class="card-title">Apostila +50 Modelos</span>
+              <span class="card-foot">PDF DOWNLOAD</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <h4>Apostila +50 Modelos</h4>
+            <span>PDF · 64 páginas</span>
+          </div>
+        </a>
+
+        <a href="#" class="card bonus-card">
+          <div class="card-thumb gradient">
+            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+                <circle cx="12" cy="12" r="3" />
+              </svg></span>
+            <div class="card-overlay">
+              <span class="card-eyebrow yellow">BÔNUS 03</span>
+              <span class="card-title">Ebook Precificação</span>
+              <span class="card-foot">EBOOK + AULAS</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <h4>Ebook Precificação</h4>
+            <span>PDF + 3 aulas extras</span>
+          </div>
+        </a>
+
+        <a href="#" class="card bonus-card">
+          <div class="card-thumb gradient">
+            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2z" />
+              </svg></span>
+            <div class="card-overlay">
+              <span class="card-eyebrow yellow">BÔNUS 04</span>
+              <span class="card-title">Aulas Bônus de Henna</span>
+              <span class="card-foot">5 AULAS EXTRAS</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <h4>Aulas Bônus de Henna</h4>
+            <span>5 aulas · 42 min</span>
+          </div>
+        </a>
+
+        <a href="#" class="card bonus-card">
+          <div class="card-thumb gradient">
+            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 7h4l2-3h6l2 3h4v13H3z" />
+                <circle cx="12" cy="13" r="4" />
+              </svg></span>
+            <div class="card-overlay">
+              <span class="card-eyebrow yellow">BÔNUS 05</span>
+              <span class="card-title">Posts para Instagram</span>
+              <span class="card-foot">PACK DE TEMPLATES</span>
+            </div>
+          </div>
+          <div class="card-meta">
+            <h4>Posts para Instagram</h4>
+            <span>+30 templates editáveis</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICADO ========== -->
+  <section class="lib-section cert-section">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-eyebrow"><svg class="ico">
+            <use href="#i-cert" />
+          </svg> EMITA SEU CERTIFICADO</span>
+        <h2>Concluiu o curso?</h2>
+      </header>
+      <div class="cert-card">
+        <div class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="9" r="5" />
+            <path d="M9 13l-2 8 5-3 5 3-2-8" />
+          </svg></div>
+        <div>
+          <h3>Certificado de Conclusão</h3>
+          <p>Após assistir todos os módulos, emita seu certificado para imprimir e usar profissionalmente.</p>
+          <a href="#" class="cert-btn">Emitir certificado →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="m-footer">
+    <p>© 2026 Sobrancelha Moderna · Suporte: <a
+        href="mailto:contato@sobrancelhamoderna.com">contato@sobrancelhamoderna.com</a></p>
+  </footer>
+
+  <script>
+    function scrollMod(dir) {
+      const car = document.getElementById('mod-carousel');
+      if (!car) return;
+      const card = car.querySelector('.card');
+      const gap = parseInt(getComputedStyle(car).gap) || 18;
+      car.scrollBy({ left: dir * (card.offsetWidth + gap), behavior: 'smooth' });
+    }
+  </script>
 
 </body>
+
 </html>
