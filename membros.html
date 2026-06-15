@@ -8,334 +8,359 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="membros.css">
 </head>
 
 <body>
 
-  <!-- SVG sprite -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor">
-        <circle cx="12" cy="12" r="11" fill="currentColor" fill-opacity="0.15" stroke="currentColor"
-          stroke-width="1.2" />
-        <path d="M10 8l6 4-6 4V8z" />
-      </symbol>
-      <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <rect x="3" y="8" width="18" height="13" rx="2" fill="currentColor" fill-opacity="0.15" />
-        <path d="M3 12h18M12 8v13" />
-        <path d="M12 8c-1-3-3-5-5-4s-1 4 5 4zM12 8c1-3 3-5 5-4s1 4-5 4z" />
-      </symbol>
-      <symbol id="i-cert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <circle cx="12" cy="9" r="5" />
-        <path d="M9 13l-2 8 5-3 5 3-2-8" />
-      </symbol>
-      <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2z" />
-      </symbol>
-      <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <circle cx="9" cy="8" r="3.5" />
-        <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
-        <circle cx="17" cy="7" r="2.5" />
-        <path d="M22 20c0-3-2-5-5-5" />
-      </symbol>
-      <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z" />
-        <path d="M4 16a4 4 0 014-4h12" />
-      </symbol>
-      <symbol id="i-money" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <rect x="2" y="6" width="20" height="12" rx="2" />
-        <circle cx="12" cy="12" r="3" />
-      </symbol>
-      <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path d="M3 7h4l2-3h6l2 3h4v13H3z" />
-        <circle cx="12" cy="13" r="4" />
-      </symbol>
-      <symbol id="i-mirror" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <ellipse cx="12" cy="9" rx="6" ry="7" />
-        <path d="M12 16v5M9 21h6" />
-      </symbol>
-      <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" />
-      </symbol>
-    </defs>
-  </svg>
+  <div class="membros-container">
 
-  <!-- ========== HEADER ========== -->
-  <header class="topbar">
-    <div class="tb-wrap">
-      <a href="#" class="logo">
-        <svg class="logo-mark" viewBox="0 0 32 32">
-          <path d="M4 20 Q16 8, 28 20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" />
-          <circle cx="16" cy="14" r="1.5" fill="currentColor" />
-        </svg>
-        <span>Sobrancelha <em>Moderna</em></span>
-      </a>
-      <div class="tb-user">
-        <span class="user-name">Olá, <strong>Aluna</strong></span>
-        <button class="user-avatar" aria-label="Conta">A</button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ========== HERO WELCOME ========== -->
-  <section class="welcome">
-    <div class="wrap">
-      <span class="welcome-tag">✨ Você está dentro</span>
-      <h1>Bem-vinda ao <em>Sobrancelha Moderna</em></h1>
-      <p>Comece pelo módulo 1 e siga no seu ritmo. Tudo aqui é seu, pra sempre 💗</p>
-      <div class="welcome-stats">
-        <div><strong>6</strong><span>Módulos</span></div>
-        <div><strong>5</strong><span>Bônus</span></div>
-        <div><strong>∞</strong><span>Acesso</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== MÓDULOS ========== -->
-  <section class="lib-section">
-    <div class="wrap">
-      <header class="sec-head">
-        <span class="sec-eyebrow"><svg class="ico">
-            <use href="#i-play" />
-          </svg> CURSO PRINCIPAL</span>
-        <h2>Módulos do Curso</h2>
-      </header>
-
-      <div class="carousel-wrap">
-        <div class="cards-carousel" id="mod-carousel">
-          <a href="https://drive.google.com/file/d/1rQTe_3F9MLEEWzRjEbrHh5S6F-jFaIZY/view?usp=drive_link" target="_blank" rel="noopener" class="card">
-            <div class="card-thumb">
-              <img src="https://i.ibb.co/gZJWv7Z1/72c1c0c8-afcb-475c-92d1-8b8c8b6db02f.png"
-                alt="Materiais & Preparação">
-            </div>
-            <div class="card-meta">
-              <h4>Materiais & Preparação</h4>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1QCq9-XBUmzGWGslOF24htqpkkZUclLFA/view?usp=drive_link" target="_blank" rel="noopener" class="card">
-            <div class="card-thumb">
-              <img src="https://i.ibb.co/RGCMv8Yq/194395ab-75b5-4e54-ac82-873decfbf286.png" alt="Biossegurança">
-            </div>
-            <div class="card-meta">
-              <h4>Biossegurança</h4>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1ZLtsEaXbRkrvVw0o1J3dTX_NKhcZNnwO/view?usp=drive_link" target="_blank" rel="noopener" class="card">
-            <div class="card-thumb">
-              <img src="https://i.ibb.co/ZRkGB47F/442a2f74-7f10-4901-ab63-7577a8c7d90a.png" alt="Mapeamento Facial">
-            </div>
-            <div class="card-meta">
-              <h4>Mapeamento Facial</h4>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1epgEWoi5J5WZYgBpjpK5DzGechGhDRJb/view?usp=drive_link" target="_blank" rel="noopener" class="card">
-            <div class="card-thumb">
-              <img src="https://i.ibb.co/60ffJw55/d87fc1f6-e4ef-48e3-b6e7-8b9c857ccf01.png" alt="Henna">
-            </div>
-            <div class="card-meta">
-              <h4>Henna</h4>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1l1Xbq2oqA1HdJ67S5UbL0FCo40yd1mRm/view?usp=drive_link" target="_blank" rel="noopener" class="card">
-            <div class="card-thumb">
-              <img src="https://i.ibb.co/B1ffbBp/d894ad72-cecb-4be8-b81f-eef20a921e20.png" alt="Design Avançado">
-            </div>
-            <div class="card-meta">
-              <h4>Design Avançado</h4>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1SLgGSpWIHo2g-P62ePfl_Owq-YVcmhfy/view?usp=drive_link" target="_blank" rel="noopener" class="card">
-            <div class="card-thumb">
-              <img src="https://i.ibb.co/1JwYjs83/47612438-3c45-42e6-8262-fffb42c7af54.png"
-                alt="Epilação & Autosobrancelha">
-            </div>
-            <div class="card-meta">
-              <h4>Epilação & Autosobrancelha</h4>
-            </div>
-          </a>
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-wrapper">
+          <svg class="logo-mark" viewBox="0 0 32 32">
+            <path d="M4 20 Q16 8, 28 20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <circle cx="16" cy="14" r="1.5" fill="currentColor" />
+          </svg>
+          <div class="logo-text">
+            <span class="logo-title">SOBRANCELHA</span>
+            <span class="logo-subtitle">Moderna</span>
+          </div>
         </div>
-        <div class="car-nav">
-          <button type="button" class="car-btn" onclick="scrollMod(-1)" aria-label="Anterior">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M15 18l-6-6 6-6" />
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#inicio" class="nav-item active">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Início</span>
+        </a>
+        <a href="#modulos" class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <span>Meus cursos</span>
+        </a>
+        <a href="#bonus" class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <span>Materiais</span>
+        </a>
+        <a href="#certificado" class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+          <span>Certificados</span>
+        </a>
+        <a href="https://t.me/+placeholder" target="_blank" rel="noopener" class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Comunidade</span>
+        </a>
+        <a href="mailto:contato@sobrancelhamoderna.com" class="nav-item">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span>Suporte</span>
+        </a>
+        <a href="#configuracoes" class="nav-item" onclick="alert('Configurações da Conta em desenvolvimento.')">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <span>Configurações</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-profile">
+        <div class="profile-icon-generic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="profile-info">
+          <span class="profile-name">Amanda Vasconcelos</span>
+          <span class="profile-role">Instrutora</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ========== MAIN CONTENT AREA ========== -->
+    <main class="main-content">
+      
+      <!-- HEADER -->
+      <header class="main-header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <div class="header-right">
+          <button class="notification-btn" aria-label="Notificações" onclick="alert('Nenhuma notificação nova.')">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
             </svg>
+            <span class="notification-badge"></span>
           </button>
-          <button type="button" class="car-btn" onclick="scrollMod(1)" aria-label="Próximo">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M9 6l6 6-6 6" />
-            </svg>
-          </button>
+          <div class="header-user">
+            <span class="header-user-name">Aluna</span>
+            <div class="header-user-avatar-initial">A</div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== BÔNUS ========== -->
-  <section class="lib-section bonus-section">
-    <div class="wrap">
-      <header class="sec-head">
-        <span class="sec-eyebrow yellow"><svg class="ico">
-            <use href="#i-gift" />
-          </svg> SEUS BÔNUS EXCLUSIVOS</span>
-        <h2>Bônus Inclusos</h2>
       </header>
 
-      <div class="cards-grid bonus-grid">
-        <a href="#" class="card bonus-card">
-          <div class="card-thumb gradient">
-            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="9" cy="8" r="3.5" />
-                <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
-                <circle cx="17" cy="7" r="2.5" />
-                <path d="M22 20c0-3-2-5-5-5" />
-              </svg></span>
-            <div class="card-overlay">
-              <span class="card-eyebrow yellow">BÔNUS 01</span>
-              <span class="card-title">Grupo VIP de Alunas</span>
-              <span class="card-foot">COMUNIDADE EXCLUSIVA</span>
-            </div>
-          </div>
-          <div class="card-meta">
-            <h4>Grupo VIP de Alunas</h4>
-            <span>Acesso vitalício à comunidade</span>
-          </div>
-        </a>
+      <div class="content-wrapper">
 
-        <a href="#" class="card bonus-card">
-          <div class="card-thumb gradient">
-            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z" />
-                <path d="M4 16a4 4 0 014-4h12" />
-              </svg></span>
-            <div class="card-overlay">
-              <span class="card-eyebrow yellow">BÔNUS 02</span>
-              <span class="card-title">Apostila +50 Modelos</span>
-              <span class="card-foot">PDF DOWNLOAD</span>
+        <!-- WELCOME BANNER -->
+        <section class="welcome-banner" id="inicio">
+          <div class="banner-text">
+            <div class="banner-logo">
+              <svg class="logo-mark" viewBox="0 0 32 32">
+                <path d="M4 20 Q16 8, 28 20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                <circle cx="16" cy="14" r="1.5" fill="currentColor" />
+              </svg>
             </div>
+            <h1 class="banner-title">
+              Curso<br>
+              <span class="serif-title">Sobrancelha<br>Moderna</span>
+            </h1>
+            <p class="banner-subtitle">com Amanda Vasconcelos</p>
+            <div class="banner-pill">Bem-vinda à sua área de membros!</div>
           </div>
-          <div class="card-meta">
-            <h4>Apostila +50 Modelos</h4>
-            <span>PDF · 64 páginas</span>
-          </div>
-        </a>
+        </section>
 
-        <a href="#" class="card bonus-card">
-          <div class="card-thumb gradient">
-            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="6" width="20" height="12" rx="2" />
-                <circle cx="12" cy="12" r="3" />
-              </svg></span>
-            <div class="card-overlay">
-              <span class="card-eyebrow yellow">BÔNUS 03</span>
-              <span class="card-title">Ebook Precificação</span>
-              <span class="card-foot">EBOOK + AULAS</span>
-            </div>
-          </div>
-          <div class="card-meta">
-            <h4>Ebook Precificação</h4>
-            <span>PDF + 3 aulas extras</span>
-          </div>
-        </a>
+        <!-- SEUS MÓDULOS -->
+        <section class="dashboard-section" id="modulos">
+          <h2 class="section-title">Seus módulos</h2>
+          
+          <div class="modules-grid">
+            
+            <!-- Módulo 1 -->
+            <a href="https://drive.google.com/file/d/1rQTe_3F9MLEEWzRjEbrHh5S6F-jFaIZY/view?usp=drive_link" target="_blank" rel="noopener" class="module-card" data-module-id="1">
+              <div class="card-header">
+                <span class="card-label">MÓDULO 1</span>
+                <h3 class="card-title">Boas-vindas</h3>
+              </div>
+              <div class="card-image-container">
+                <img src="https://i.ibb.co/gZJWv7Z1/72c1c0c8-afcb-475c-92d1-8b8c8b6db02f.png" alt="Boas-vindas">
+                <button class="complete-btn" aria-label="Marcar como concluído">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-footer">
+                <div class="progress-pct">0% concluído</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+            </a>
 
-        <a href="#" class="card bonus-card">
-          <div class="card-thumb gradient">
-            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2z" />
-              </svg></span>
-            <div class="card-overlay">
-              <span class="card-eyebrow yellow">BÔNUS 04</span>
-              <span class="card-title">Aulas Bônus de Henna</span>
-              <span class="card-foot">5 AULAS EXTRAS</span>
-            </div>
-          </div>
-          <div class="card-meta">
-            <h4>Aulas Bônus de Henna</h4>
-            <span>5 aulas · 42 min</span>
-          </div>
-        </a>
+            <!-- Módulo 2 -->
+            <a href="https://drive.google.com/file/d/1QCq9-XBUmzGWGslOF24htqpkkZUclLFA/view?usp=drive_link" target="_blank" rel="noopener" class="module-card" data-module-id="2">
+              <div class="card-header">
+                <span class="card-label">MÓDULO 2</span>
+                <h3 class="card-title">Biossegurança</h3>
+              </div>
+              <div class="card-image-container">
+                <img src="https://i.ibb.co/RGCMv8Yq/194395ab-75b5-4e54-ac82-873decfbf286.png" alt="Biossegurança">
+                <button class="complete-btn" aria-label="Marcar como concluído">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-footer">
+                <div class="progress-pct">0% concluído</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+            </a>
 
-        <a href="#" class="card bonus-card">
-          <div class="card-thumb gradient">
-            <span class="bonus-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 7h4l2-3h6l2 3h4v13H3z" />
-                <circle cx="12" cy="13" r="4" />
-              </svg></span>
-            <div class="card-overlay">
-              <span class="card-eyebrow yellow">BÔNUS 05</span>
-              <span class="card-title">Posts para Instagram</span>
-              <span class="card-foot">PACK DE TEMPLATES</span>
+            <!-- Módulo 3 -->
+            <a href="https://drive.google.com/file/d/1ZLtsEaXbRkrvVw0o1J3dTX_NKhcZNnwO/view?usp=drive_link" target="_blank" rel="noopener" class="module-card" data-module-id="3">
+              <div class="card-header">
+                <span class="card-label">MÓDULO 3</span>
+                <h3 class="card-title">Mapeamento Facial</h3>
+              </div>
+              <div class="card-image-container">
+                <img src="https://i.ibb.co/ZRkGB47F/442a2f74-7f10-4901-ab63-7577a8c7d90a.png" alt="Mapeamento Facial">
+                <button class="complete-btn" aria-label="Marcar como concluído">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-footer">
+                <div class="progress-pct">0% concluído</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Módulo 4 -->
+            <a href="https://drive.google.com/file/d/1epgEWoi5J5WZYgBpjpK5DzGechGhDRJb/view?usp=drive_link" target="_blank" rel="noopener" class="module-card" data-module-id="4">
+              <div class="card-header">
+                <span class="card-label">MÓDULO 4</span>
+                <h3 class="card-title">Henna</h3>
+              </div>
+              <div class="card-image-container">
+                <img src="https://i.ibb.co/60ffJw55/d87fc1f6-e4ef-48e3-b6e7-8b9c857ccf01.png" alt="Henna">
+                <button class="complete-btn" aria-label="Marcar como concluído">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-footer">
+                <div class="progress-pct">0% concluído</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Módulo 5 -->
+            <a href="https://drive.google.com/file/d/1l1Xbq2oqA1HdJ67S5UbL0FCo40yd1mRm/view?usp=drive_link" target="_blank" rel="noopener" class="module-card" data-module-id="5">
+              <div class="card-header">
+                <span class="card-label">MÓDULO 5</span>
+                <h3 class="card-title">Design Avançado</h3>
+              </div>
+              <div class="card-image-container">
+                <img src="https://i.ibb.co/B1ffbBp/d894ad72-cecb-4be8-b81f-eef20a921e20.png" alt="Design Avançado">
+                <button class="complete-btn" aria-label="Marcar como concluído">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-footer">
+                <div class="progress-pct">0% concluído</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Módulo 6 -->
+            <a href="https://drive.google.com/file/d/1SLgGSpWIHo2g-P62ePfl_Owq-YVcmhfy/view?usp=drive_link" target="_blank" rel="noopener" class="module-card" data-module-id="6">
+              <div class="card-header">
+                <span class="card-label">MÓDULO 6</span>
+                <h3 class="card-title">Epilação</h3>
+              </div>
+              <div class="card-image-container">
+                <img src="https://i.ibb.co/1JwYjs83/47612438-3c45-42e6-8262-fffb42c7af54.png" alt="Epilação & Autosobrancelha">
+                <button class="complete-btn" aria-label="Marcar como concluído">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="card-footer">
+                <div class="progress-pct">0% concluído</div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- BÔNUS INCLUSOS -->
+        <section class="dashboard-section" id="bonus">
+          <h2 class="section-title">Bônus inclusos</h2>
+          
+          <div class="bonus-grid">
+            
+            <a href="#" class="bonus-card-premium">
+              <div class="bonus-label">BÔNUS 01</div>
+              <h3 class="bonus-title">Grupo VIP de Alunas</h3>
+              <p class="bonus-desc">Comunidade exclusiva e suporte direto com a instrutora.</p>
+              <div class="bonus-meta">COMUNIDADE EXCLUSIVA</div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1X1AB0q--OhFUv520ISmh9d2Q2Sk8Vzmk/view?usp=drive_link" target="_blank" rel="noopener" class="bonus-card-premium">
+              <div class="bonus-label">BÔNUS 02</div>
+              <h3 class="bonus-title">Apostila +50 Modelos</h3>
+              <p class="bonus-desc">Guia passo a passo de formatos de sobrancelhas e rostos.</p>
+              <div class="bonus-meta">PDF DOWNLOAD</div>
+            </a>
+
+            <a href="#" class="bonus-card-premium">
+              <div class="bonus-label">BÔNUS 03</div>
+              <h3 class="bonus-title">Ebook Precificação</h3>
+              <p class="bonus-desc">Aprenda a calcular custos e cobrar com segurança.</p>
+              <div class="bonus-meta">EBOOK + AULAS</div>
+            </a>
+
+            <a href="#" class="bonus-card-premium">
+              <div class="bonus-label">BÔNUS 04</div>
+              <h3 class="bonus-title">Aulas Extras de Henna</h3>
+              <p class="bonus-desc">Técnicas avançadas de fixação e efeito ombré.</p>
+              <div class="bonus-meta">5 AULAS EXTRAS</div>
+            </a>
+
+            <a href="#" class="bonus-card-premium">
+              <div class="bonus-label">BÔNUS 05</div>
+              <h3 class="bonus-title">Pack Posts Instagram</h3>
+              <p class="bonus-desc">Modelos prontos no Canva para divulgar seu trabalho.</p>
+              <div class="bonus-meta">PACK DE TEMPLATES</div>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- CERTIFICADO -->
+        <section class="dashboard-section" id="certificado">
+          <div class="cert-card-premium">
+            <div class="cert-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="9" r="5"></circle>
+                <path d="M9 13l-2 8 5-3 5 3-2-8"></path>
+              </svg>
+            </div>
+            <div class="cert-text-content">
+              <h3 class="cert-title">Certificado de Conclusão</h3>
+              <p class="cert-desc">Ao terminar de assistir todos os módulos práticos, você poderá emitir o seu certificado oficial com selo de validade para imprimir e expor no seu espaço de atendimento.</p>
+              <a href="https://drive.google.com/file/d/1kyXt-If5HHWwiHFQ-4RJQnW8qHXDkObb/view?usp=drive_link" target="_blank" rel="noopener" class="cert-action-btn">Emitir certificado oficial →</a>
             </div>
           </div>
-          <div class="card-meta">
-            <h4>Posts para Instagram</h4>
-            <span>+30 templates editáveis</span>
-          </div>
-        </a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="members-footer">
+          <p>© 2026 Sobrancelha Moderna · Suporte técnico: <a href="mailto:contato@sobrancelhamoderna.com">contato@sobrancelhamoderna.com</a></p>
+        </footer>
+
       </div>
-    </div>
-  </section>
+    </main>
 
-  <!-- ========== CERTIFICADO ========== -->
-  <section class="lib-section cert-section">
-    <div class="wrap">
-      <header class="sec-head">
-        <span class="sec-eyebrow"><svg class="ico">
-            <use href="#i-cert" />
-          </svg> EMITA SEU CERTIFICADO</span>
-        <h2>Concluiu o curso?</h2>
-      </header>
-      <div class="cert-card">
-        <div class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-            stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="9" r="5" />
-            <path d="M9 13l-2 8 5-3 5 3-2-8" />
-          </svg></div>
-        <div>
-          <h3>Certificado de Conclusão</h3>
-          <p>Após assistir todos os módulos, emita seu certificado para imprimir e usar profissionalmente.</p>
-          <a href="#" class="cert-btn">Emitir certificado →</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
-  <footer class="m-footer">
-    <p>© 2026 Sobrancelha Moderna · Suporte: <a
-        href="mailto:contato@sobrancelhamoderna.com">contato@sobrancelhamoderna.com</a></p>
-  </footer>
-
-  <script>
-    function scrollMod(dir) {
-      const car = document.getElementById('mod-carousel');
-      if (!car) return;
-      const card = car.querySelector('.card');
-      const gap = parseInt(getComputedStyle(car).gap) || 18;
-      car.scrollBy({ left: dir * (card.offsetWidth + gap), behavior: 'smooth' });
-    }
-  </script>
-
+  <script src="membros.js"></script>
 </body>
 
 </html>
