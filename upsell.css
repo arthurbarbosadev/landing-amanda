@@ -1,0 +1,355 @@
+/* 
+ * Funil de Vendas — Sobrancelha Moderna
+ * Estilos compartilhados para Upsell e Downsell
+ */
+
+:root {
+  --bg-app: #ffffff; /* Fundo Branco */
+  --bg-card: #ffffff;
+  --border-color: #ebdcd7;
+  --border-color-light: #f4ece9;
+  
+  --text-dark: #3c2825;
+  --text-medium: #6b5551;
+  --text-muted: #8e7a76;
+  
+  --accent-pink: #16a34a; /* Verde de conversão */
+  --accent-pink-hover: #15803d;
+  --accent-bg-active: #ebdcd7;
+  --accent-bg-pill: #a06860;
+  
+  --green: #4f7e6b;
+  --green-bg: #e6eef0;
+  
+  --shadow-sm: 0 2px 8px rgba(60, 40, 37, 0.04);
+  --shadow-md: 0 8px 24px rgba(60, 40, 37, 0.06);
+  --shadow-lg: 0 16px 36px rgba(60, 40, 37, 0.08);
+  
+  --font-serif: 'Plus Jakarta Sans', -apple-system, sans-serif; /* Letra Normal */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+/* ========== RESET ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========== HEADER STATUS BANNER ========== */
+.status-banner {
+  background-color: var(--green-bg);
+  border-bottom: 1px solid rgba(79, 126, 107, 0.15);
+  color: var(--green);
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.status-banner svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+}
+
+/* ========== CONTAINER PRINCIPAL ========== */
+.funnel-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  text-align: center;
+}
+
+/* Top Badge / Hook */
+.hook-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--accent-pink);
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Headlines */
+.headline {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.headline em {
+  font-style: normal;
+  font-weight: 800;
+  color: #b27a72; /* Terracota elegante no destaque */
+}
+
+/* Video / Image Mockup */
+/* Banner */
+.funnel-banner {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 32px;
+  display: block;
+}
+
+/* Letter Content (Persuasion) */
+.sales-letter {
+  text-align: left;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 36px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.sales-letter p {
+  color: var(--text-medium);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sales-letter p strong {
+  color: var(--text-dark);
+}
+
+.sales-letter p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Bullet Points */
+.benefits-list {
+  list-style: none;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  line-height: 1.45;
+}
+
+.benefits-list li svg {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-pink);
+  stroke-width: 2.2;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.benefits-list li strong {
+  color: var(--text-dark);
+}
+
+/* ========== BOX DE PREÇO E CTA ========== */
+.price-box {
+  margin: 36px 0 24px;
+  padding: 24px;
+  border-top: 1.5px dashed var(--border-color);
+  border-bottom: 1.5px dashed var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-old {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.price-new {
+  font-family: var(--font-sans);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.price-new span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-medium);
+  vertical-align: middle;
+}
+
+.price-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* CTA Buttons */
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--accent-pink);
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 18px 24px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.25);
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  animation: pulse-shadow 2s infinite;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-pink-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.35);
+}
+
+.cta-button svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+}
+
+.cta-button-yellow {
+  background-color: var(--accent-pink);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.25);
+}
+
+.cta-button-yellow:hover {
+  background-color: var(--accent-pink-hover);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.35);
+}
+
+/* Refusal link */
+.no-thanks-link {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.no-thanks-link:hover {
+  color: var(--accent-pink-hover);
+  border-color: var(--accent-pink-hover);
+}
+
+/* Security Seals */
+.security-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 36px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.security-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.security-item svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  color: var(--accent-pink);
+}
+
+/* ========== PULSING KEYFRAME ========== */
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(22, 163, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0);
+  }
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+  .headline {
+    font-size: 2rem;
+  }
+  
+  .sales-letter {
+    padding: 24px;
+  }
+  
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 16px 20px;
+  }
+}
+
+/* ========== TIMER BAR AND BADGE ========== */
+.status-banner.timer-banner {
+  background-color: #dc2626; /* Vermelho Vermelho */
+  border-bottom: 1px solid #b91c1c;
+  color: #ffffff;
+}
+
+.timer-badge {
+  font-family: monospace;
+  font-weight: 900;
+  color: #dc2626;
+  background-color: #ffffff; /* Fundo Branco no contador */
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-left: 8px;
+  font-size: 1.25rem; /* Aumenta a letra */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  border: 2px solid #b91c1c; /* Borda mais grossa */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

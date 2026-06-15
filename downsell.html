@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Última Chance: Desconto Exclusivo — Sobrancelha Moderna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="upsell.css">
+</head>
+
+<body>
+
+  <!-- STATUS BANNER TIMER -->
+  <div class="status-banner timer-banner">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polyline points="12 6 12 12 16 14"></polyline>
+    </svg>
+    <span>ATENÇÃO: Esta oferta especial expira em</span>
+    <span class="timer-badge" id="timer">05:00</span>
+  </div>
+
+  <div class="funnel-container">
+    
+    <span class="hook-text">Última oportunidade antes de liberar os seus acessos.</span>
+    
+    <h1 class="headline" style="font-size: 2.3rem;">
+      Seu Acesso ao Curso Continua <em>100% Garantido</em> no seu E-mail!
+    </h1>
+
+    <h2 style="font-size: 1.1rem; font-weight: 500; color: var(--text-medium); margin-top: -12px; margin-bottom: 28px;">
+      Mas antes de ir, reduzi o valor ao máximo para você não ficar sem clientes:
+    </h2>
+
+    <!-- BANNER -->
+    <img src="assets/banner.png" alt="Método Instagram de Designer" class="funnel-banner">
+
+    <!-- SALES LETTER -->
+    <div class="sales-letter" style="padding: 28px;">
+      <p>Eu entendo perfeitamente que investir mais R$ 39,90 agora pode pesar ou trazer dúvidas.</p>
+      
+      <p>Mas eu realmente não quero que a falta de clientes impeça você de faturar e lotar sua agenda. A técnica do curso só traz resultados se você tiver pessoas agendando.</p>
+      
+      <p>Por isso, <strong>somente nesta página</strong>, reduzi o valor do <strong>Método Instagram de Designer</strong> para o menor preço possível, apenas para cobrir as taxas operacionais:</p>
+      
+      <p style="font-size: 1.1rem; text-align: center; color: var(--text-dark); margin-top: 12px; margin-bottom: 6px;">
+        De R$ 39,90 por <strong>apenas R$ 15,90</strong> (pagamento único).
+      </p>
+      
+      <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+        Você terá acesso vitalício a todo o passo a passo, scripts de Stories e abordagens no Direct.
+      </p>
+
+      <p style="text-align: center; font-size: 1rem; color: var(--text-dark); font-weight: 600; margin-top: 14px; margin-bottom: 0;">
+        Não deixe a parte mais fácil — conseguir clientes — ser o motivo de você desistir.
+      </p>
+    </div>
+
+    <!-- BOX DE PREÇO -->
+    <div class="price-box" style="margin: 24px 0 20px; padding: 18px;">
+      <span class="price-old">Preço Anterior: R$ 39,90</span>
+      <div class="price-new">R$ 15,90 <span>único</span></div>
+      <span class="price-tag" style="color: #d97706;">A melhor oferta possível para você</span>
+    </div>
+
+    <!-- CTA BUTTON -->
+    <a href="https://pay.lowify.com.br/checkout?product_id=u496xn" class="cta-button cta-button-yellow">
+      Sim! Quero garantir minhas clientes por R$ 15,90
+    </a>
+
+    <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin: 14px 0 0; line-height: 1.5;">
+      Acesso imediato e vitalício • Pagamento único, sem mensalidade.
+    </p>
+
+    <!-- LINK DE RECUSA (DIRECIONA PARA MEMBROS.HTML) -->
+    <a href="membros.html" class="no-thanks-link">
+      Não, prefiro abrir mão do desconto e ir direto para a área de membros.
+    </a>
+
+    <!-- SECURITY SEALS -->
+    <div class="security-row" style="margin-top: 28px;">
+      <div class="security-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+        <span>Compra Segura</span>
+      </div>
+      <div class="security-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        <span>Acesso Imediato</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- COUNTDOWN TIMER SCRIPT -->
+  <script>
+    function startTimer(duration, display) {
+      let timer = duration, minutes, seconds;
+      const interval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          clearInterval(interval);
+          display.textContent = "00:00";
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      const fiveMinutes = 60 * 5;
+      const display = document.querySelector('#timer');
+      startTimer(fiveMinutes, display);
+    };
+  </script>
+
+</body>
+
+</html>
